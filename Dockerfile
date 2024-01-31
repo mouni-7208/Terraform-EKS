@@ -3,7 +3,7 @@ FROM node:alpine
 
 # Create and set the working directory inside the container
 WORKDIR /app
-npm cache clean -f
+
 # Copy package.json and package-lock.json to the working directory
 COPY package.json package-lock.json /app/
 
