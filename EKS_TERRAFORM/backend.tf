@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "mounika-s3bucket" # Replace with your actual S3 bucket name
+    bucket = "bhanu-s3bucket" # Replace with your actual S3 bucket name
     key    = "EKS/terraform.tfstate"
     region = "ap-south-1"
   }
