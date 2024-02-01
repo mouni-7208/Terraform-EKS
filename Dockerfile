@@ -9,7 +9,6 @@ COPY package.json package-lock.json /app/
 
 # Install dependencies
 RUN npm install
-npm cache clean --force
 
 # Copy the entire codebase to the working directory
 COPY . /app/
