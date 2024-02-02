@@ -49,7 +49,7 @@ resource "aws_eks_cluster" "example" {
 }
 
 resource "aws_iam_role" "example1" {
-  name = "eks-node-group-cloud2"
+  name = "eks-node-group_cloud"
 
   assume_role_policy = jsonencode({
     Statement = [{
