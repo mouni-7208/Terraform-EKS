@@ -34,7 +34,7 @@ data "aws_subnets" "public" {
 }
 #cluster provision
 resource "aws_eks_cluster" "example" {
-  name     = "EKS_CLOUD2"
+  name     = "EKS_CLOUD3"
   role_arn = aws_iam_role.example.arn
 
   vpc_config {
@@ -49,7 +49,7 @@ resource "aws_eks_cluster" "example" {
 }
 
 resource "aws_iam_role" "example1" {
-  name = "eks-node-group_cloud"
+  name = "eks-node-group-cloud272"
 
   assume_role_policy = jsonencode({
     Statement = [{
